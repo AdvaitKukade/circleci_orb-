@@ -1,12 +1,13 @@
 version: 2.1
 orbs:
-  myorb1: my_namespace_1/greet-user@0.0.6
+  myorb1: my_namespace_1/greet-user@0.0.7
 jobs:
   build:
     docker: 
       - image: alpine
     steps:
-      - myorb1/hello:
+      - myorb1/cmd_1:
           username: "Advait" 
+      - myorb1/cmd_2:
           lastname: "Kukade"
           contact_no: "8793710057"
