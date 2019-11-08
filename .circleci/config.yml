@@ -1,6 +1,8 @@
 version: 2.1
 jobs:
   sayhello:
+    docker: 
+      - image: alpine
     description: A job that does very little other than demonstration what a parameterized job does
     parameters:
       saywhat:
@@ -14,4 +16,4 @@ workflows:
   build:
     jobs:
       - sayhello: # invokes the parameterzied job
-          saywhat: Everyone
+          saywhat: "Everyone"
