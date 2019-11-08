@@ -4,5 +4,6 @@ jobs:
     docker: 
       - image: alpine
     steps:
-      - my_namespace_1/hello-world@0.0.1
+      - myorb/sayhello:
+          to: "Lev"
     
