@@ -1,8 +1,8 @@
 version: 2.1
 jobs:
-  job_1:
+  build:
     docker: 
-      - image: alpine:3.5
+      - image: alpine
     steps:
       - my_namespace_1/hello-world@0.0.1
     
