@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  myorb1: my_namespace_1/greet-user@0.0.2
+  myorb1: my_namespace_1/greet-user@second
 jobs:
   build:
     docker: 
@@ -8,3 +8,5 @@ jobs:
     steps:
       - myorb1/hello:
           username: "Advait" 
+          lastname: "Kukade"
+          contact_no: 8793710057
