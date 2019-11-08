@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  myorb1: my_namespace_1/greet-user@second
+  myorb1: my_namespace_1/greet-user@0.0.3
 jobs:
   build:
     docker: 
