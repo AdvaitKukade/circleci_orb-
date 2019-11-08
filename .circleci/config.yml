@@ -1,9 +1,10 @@
 version: 2.1
+orbs:
+  myorb1: my_namespace_1/greet-user@0.0.1
 jobs:
   build:
     docker: 
       - image: alpine
     steps:
-      - myorb/sayhello:
-          to: "Lev"
-    
+      - myorb1/greet-user:
+          username: "Advait" 
